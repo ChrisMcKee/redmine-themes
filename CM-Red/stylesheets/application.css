@@ -267,6 +267,7 @@ p.breadcrumb {
 .contextual a{ color:#455138;}
 
 /* Relations - Contextual */
+#issue_tree .contextual,
 #relations .contextual,
 #watchers .contextual,
 #related_arch_decisions .contextual{ 
@@ -282,11 +283,11 @@ p.breadcrumb {
 	
 }
 
+
 /* No Sidebar Page Contextual */
 /*#main.nosidebar .contextual {  top:36px; }*/
 
 #content hr{ /*clear:both;*/ }
-
 
 
 /* Buttons */
