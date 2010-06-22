@@ -1,0 +1,392 @@
+/* Load the default Redmine stylesheet */
+@import url(../../../stylesheets/application.css);
+
+/*
+                              
+    _/_/  _/_/_/_/ 
+  _/     _/ _/ _/  
+ _/     _/ _/ _/
+ _/_/  _/ _/ _/    
+
+
+Theme:		Chris McKee Customised Theme
+Updated:	18/05/10
+Author:		Chris McKee <chris@chrismckee.co.uk>
+
+*/
+
+html, body{  }
+body, #wrapper { background: #E1E1E1; font-family: helvetica, arial, sans-serif; }
+
+h1, h2, h3, h4 { font-family: helvetica neue, helvetica, "microsoft sans serif", arial, sans-serif; }
+h2, h3, h4 { border-bottom: 0px;}
+h1 { color: #fff; font-size: 3em; font-weight: normal; margin:0pt 0pt 0pt 0.25em; padding:0pt 0pt 10px; text-align:left; }
+h1 a{ color:#000 !important; text-shadow:none;}
+h2{ 
+	background-color: #CD321D; 
+	margin: 2px 0px 10px; 
+	padding: 10px .7em; 
+	font-size: 21px;
+	font-weight: normal;
+	color: #fff;
+	border: none;
+	-moz-border-radius: 3px;
+	border-radius:3px;
+}
+h3, h4 { font-weight: normal; color: #134776; font-weight:600}
+
+a, a:link, a:visited { color: #134776}
+a:hover { text-decoration: none; color: #D63B57; text-decoration:underline;}
+
+/* Fields */
+input[type="text"], input[type='password'], textarea { font-size: 13px; font-family: Andale Mono,Lucida Console,Monaco,fixed,monospace; }
+input[type="text"], textarea, select { padding: 2px;  }
+input[type="text"]:focus, textarea:focus, select:focus {  }
+option {  }
+input[type="text"], textarea, select {
+	border: 1px #989898 solid;
+	background-color: #F5F5F5;
+	-moz-border-radius: 3px;
+	border-radius:3px;
+}
+
+input#issue_subject { font-size: 200%; width: 90%; }
+input#issue_subject, #project_description { width: 92.5%; }
+textarea#issue_description { width: 93%;}
+
+
+/* Header */
+#header, #top-menu { margin: 0; }
+#header { background: #E1E1E1; padding: 8px 0 0 0; height: 7em; }
+#header h1 {  margin: 0 24px; font-size:3em; text-shadow: #2A2A2A 0px 3px 8px; }
+#header #quick-search { margin: 0 24px; }
+#header a{ color:#000; }
+
+/* END Header */
+
+/* Top Menu */
+#top-menu { background-color: #CD321D; font-size: .9em; position: relative; margin-left: -.3em; padding: 0; height: 21px }
+#top-menu ul { padding: 0 21px; }
+#top-menu li, #top-menu #loggedas { color: #ddd; line-height: 21px; margin-right: 0px;}
+#top-menu li a { color: #E1E1E1; font-weight: normal; padding:4px 5px; }
+#top-menu li a:hover { color: #fff; text-decoration: none; }
+/* END Top Menu */
+
+#main { background: transparent url("../sidebar.gif") repeat-y scroll right center; margin: 0 24px 0px 24px; }
+
+/* Menu */
+#main-menu { margin: 0 1.5em; margin-bottom: -2px;}
+#main-menu li a { font-weight: normal; padding:6px 8px 8px; color:#555; }
+#main-menu li a:hover ,#main-menu li a:focus{ 
+	color: #000;
+	background: transparent; 
+	text-decoration: none; 
+}
+#main-menu li a.selected, #main-menu li a.selected:hover { 
+	background-color:#fff; 
+	color: #111; 
+	-moz-border-radius-topleft: .3em; -webkit-border-top-left-radius: .3em;
+	-moz-border-radius-topright: .3em; -webkit-border-top-right-radius: .3em;
+}
+/* END Menu */
+
+/* Content */
+#content { 
+	background: #fff; 
+	width: 74.5%;
+	-moz-border-radius: 3px;
+	border-radius:3px;
+	position:relative;
+}
+#content h2 a{ color:#fff;}
+
+/* End Content */
+
+
+/* Side Bar */
+#sidebar { width: 21.5%; }
+#sidebar p { color: #f0f0f0;}
+#sidebar label,
+#sidebar a:link, #sidebar a:hover, #sidebar a:active, #sidebar a:visited { color: #f0f0f0; }
+#sidebar a:hover ,#sidebar a:focus{ background-color:#fff; color:#333; text-decoration: none;}
+#sidebar h3 { color: #fff; border-bottom:1px solid #989898; padding:6px 0; font-weight:600; font-size:1.2em; }
+#sidebar h4 { color: #fff; border-bottom:1px solid #989898; padding:6px 0; font-weight:600; font-size:1.0em; }
+
+#sidebar .contextual a { color:#000; padding:0px; }
+/* End Side Bar */
+
+/* Footer */
+#footer { background: #E1E1E1;  border: 0px; clear: left; font-size:9px; margin:4px 0 20px 20px; padding-bottom:15px; text-align:left;  color: #666; margin: 0 24px; }
+#footer a:hover ,#footer a:focus { background:#666 none repeat scroll 0 0; color:#FFF !important; }
+#footer a:link, #footer a:visited { color:#666; }
+/* End Footer */
+
+p.subtitle {
+	font-style:normal;
+}
+
+/* Progress bar */
+table.progress td.closed { background-color:#C6E60D; }
+
+/* Wiki */
+.wiki h1, .wiki h2, .wiki h3, .wiki h4 { font-family: helvetica neue, helvetica, "microsoft sans serif", arial, sans-serif; font-weight:bold; }
+.wiki h2{ font-size:130%; border:none; font-weight:600; }
+.wiki h3{ font-size:120%; }
+.wiki h4{ font-size:110%; }
+.wiki h1 { font-family: helvetica, "microsoft sans serif", arial, sans-serif;	background-color: #CD321D; 
+	margin: 2px 0px 10px; 
+	padding: 10px .7em; 
+	font-size: 21px;
+	font-weight: normal;
+	color: #fff;
+	border: none;
+	-moz-border-radius: 3px;
+	border-radius:3px; }
+.wiki h2 { background-color: #fff; }
+.wiki a{ color: #134776 !important; }
+/* END Wiki */
+
+/* Settings Menu */
+#content .tabs ul li a {
+	font-weight: normal;
+	font-size: .9em;
+	border-top: 1px #fff solid;
+	border-right: 1px #fff solid;
+	border-left: 1px #fff solid;
+	background: #fff;
+	-moz-border-radius-topleft: .3em; -webkit-border-top-left-radius: .3em;
+	-moz-border-radius-topright: .3em; -webkit-border-top-right-radius: .3em;
+}
+
+#content .tabs ul li a:hover {
+	background: #fff;
+	color: #FFA500;
+}
+
+#content .tabs ul li a.selected {
+	font-weight: normal;
+	color:#455138;
+	-moz-border-radius-topleft: .3em; -webkit-border-top-left-radius: .3em;
+	-moz-border-radius-topright: .3em; -webkit-border-top-right-radius: .3em;
+}
+/* END Settings Menu */
+
+/* GOOGLE Calendar */
+.googleframe{
+width:100%;height:590px;
+border:none;
+}
+
+/* Tables */
+table.list { border: none; }
+table.list th { background-color: #fff; }
+table.list tbody td, table.list tbody tr td { border-bottom: solid 1px #ddd; padding:4px 10px 4px 3px; }
+table.list thead th {
+	border: none;
+	border-bottom:1px solid #999999;
+	font-size:9px;
+	font-weight:normal;
+	padding:0pt 3px 3px;
+	text-transform:uppercase;
+}
+
+table.list thead th a { color: #2e2e2e; }
+table.list thead th a:hover { color: #2e2e2e; }
+
+/* Issues Grid Styles By Priorities*/
+table.list tr.issue a { color: #3c3c3c; }
+
+/* P5 */
+tr.odd.priority-5, table.list tbody tr.odd.priority-5:hover { color: #900; font-weight: bold; }
+tr.odd.priority-5 { background: #ffc4c4; }
+tr.even.priority-5, table.list tbody tr.even.priority-5:hover { color: #900; font-weight: bold; }
+tr.even.priority-5 { background: #ffd4d4; }
+tr.priority-5 a, tr.priority-5:hover a { color: #900; }
+tr.odd.priority-5 td, tr.even.priority-5 td { border-color: #ffb4b4; }
+/* P4 */
+tr.odd.priority-4, table.list tbody tr.odd.priority-4:hover { color: #900; }
+tr.odd.priority-4 { background: #ffc4c4; }
+tr.even.priority-4, table.list tbody tr.even.priority-4:hover { color: #900; }
+tr.even.priority-4 { background: #ffd4d4; }
+tr.priority-4 a { color: #900; }
+tr.odd.priority-4 td, tr.even.priority-4 td { border-color: #ffb4b4; }
+
+/* P3 */
+tr.odd.priority-3, table.list tbody tr.odd.priority-3:hover { color: #900; }
+tr.odd.priority-3 { background: #fee; }
+tr.even.priority-3, table.list tbody tr.even.priority-3:hover { color: #900; }
+tr.even.priority-3 { background: #fff2f2; }
+tr.priority-3 a { color: #900; }
+tr.odd.priority-3 td, tr.even.priority-3 td { border-color: #fcc; }
+
+/* P2 (2 is NORMAL So No Styles) */
+
+/* P1 */
+tr.odd.priority-1, table.list tbody tr.odd.priority-1:hover { color: #559; }
+tr.odd.priority-1 { background: #eaf7ff; }
+tr.even.priority-1, table.list tbody tr.even.priority-1:hover { color: #559; }
+tr.even.priority-1 { background: #f2faff; }
+tr.priority-1 a { color: #559; }
+tr.odd.priority-1 td, tr.even.priority-1 td { border-color: #add7f3; }
+
+/* END Issues Grid Styles By Priorities*/
+
+/* Bread Crumb (Forums etc) */
+p.breadcrumb {
+	background-color:#EEE;
+	border-bottom:1px solid white;
+	font-size:0.9em;
+	margin:-6px -10px 6px;
+	padding:6px;
+	text-indent:15px;
+}
+
+/* Forum */
+.message { position:relative;}
+
+/* MyPage API Key */
+#api-access-key{ color:#000; font-family:"Segoe UI", mono, courier, arial, serif; font-size:11px; background:yellow;}
+
+/* Content Split Left Clear */
+.splitcontentleft{ clear:both;}
+
+/* Contextual (Header Buttons) */
+.contextual { 
+	position:absolute;
+	top:13px; right:15px; 
+	background-color:#fff;
+	border: solid #ccc 1px; 
+	font-size: 1em;
+	display:block;
+	padding: 4px; 
+	font-weight:600;
+	white-space: nowrap;
+	border-radius:5px;
+}
+
+.contextual a{ color:#455138;}
+
+/* Relations - Contextual */
+#relations .contextual,
+#watchers .contextual,
+#related_arch_decisions .contextual{ 
+	position:relative;
+	background-color:#fff;
+	font-size: 1em;
+	display:block;
+	padding: 4px; 
+	font-weight:600;
+	border-radius:5px;
+	right: 0px;
+	top:0px;
+	
+}
+
+/* No Sidebar Page Contextual */
+/*#main.nosidebar .contextual {  top:36px; }*/
+
+#content hr{ /*clear:both;*/ }
+
+
+
+/* Buttons */
+/* Should read class='large orange button' but had to use cbutton as some nob used button for the calendar */
+input[type=submit], input[type=submit]:visited,
+.cbutton,.cbutton:visited{background:#222 url(../alert-overlay.png) repeat-x;display:inline-block;color:#fff;text-decoration:none;-moz-border-radius:5px;-webkit-border-radius:5px;-moz-box-shadow:0 1px 3px rgba(0,0,0,0.5);-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);text-shadow:0 -1px 1px rgba(0,0,0,0.25);border-bottom:1px solid rgba(0,0,0,0.25);position:relative;cursor:pointer;padding:5px 10px 6px;}
+input[type=submit]:hover, .cbutton:hover{background-color:#111;color:#fff;}
+input[type=submit]:active, .cbutton:active{top:1px;}
+.small.cbutton,.small.cbutton:visited{font-size:11px;}
+.cbutton,.cbutton:visited,.medium.cbutton,.medium.cbutton:visited{font-size:13px;font-weight:700;line-height:1;text-shadow:0 -1px 1px rgba(0,0,0,0.25);}
+.large.cbutton,.large.cbutton:visited{font-size:14px;padding:8px 14px 9px;}
+input[type=submit], input[type=submit]:visited, .green.cbutton,.green.cbutton:visited{background-color:#91bd09;}
+input[type=submit]:hover, .green.cbutton:hover{background-color:#749a02;}
+.blue.cbutton,.blue.cbutton:visited{background-color:#2daebf;}
+.blue.cbutton:hover{background-color:#007d9a;}
+.red.cbutton,.red.cbutton:visited{background-color:#e33100;}
+.red.cbutton:hover{background-color:#872300;}
+.magenta.cbutton,.magenta.cbutton:visited{background-color:#a9014b;}
+.magenta.cbutton:hover{background-color:#630030;}
+.orange.cbutton,.orange.cbutton:visited{background-color:#ff5c00;}
+.orange.cbutton:hover{background-color:#d45500;}
+.yellow.cbutton,.yellow.cbutton:visited{background-color:#ffb515;}
+.yellow.cbutton:hover{background-color:#fc9200;}
+
+/* End Buttons */
+
+
+
+/* Misc Reformatting */
+#tooltip{ z-index:1000; display:block;  }
+#tooltip pre{ display:block;
+			 white-space: pre-wrap; /* css-3 */
+			 white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+			 white-space: -pre-wrap; /* Opera 4-6 */
+			 white-space: -o-pre-wrap; /* Opera 7 */
+			 word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+.issue h3 { font-weight:600; }
+
+.nodata, #login-form table, .flash.notice {
+	border-width: 1px;
+	-moz-border-radius: 3px;
+	border-radius:3px;
+}
+
+a.login{ font-weight:600 !important; color:yellow !important; }
+
+.box { 
+	background-color: #fcfcfc;
+	border-top: 1px #eee solid;
+	border-right: 1px #ccc solid;
+	border-bottom: 1px #ccc solid;
+	border-left: 1px #eee solid;
+	-moz-border-radius: 3px;
+	border-radius:3px;
+}
+
+
+#attachments_fields input[type="text"] {
+	width: 39%;
+}
+
+.jstElements { margin-right: 3.5em;}
+.tabular label { font-weight: normal;}
+
+
+table.list thead th {
+	font-size:.8em;
+}
+
+tr.message td.last_message { 
+	font-size:.9em;
+}
+
+div#activity dl, #search-results {
+	margin-left:0em;
+}
+div#activity dd, #search-results dd {
+	font-size:1em;
+}
+
+
+span.description { margin: .5em 0;}
+
+hr { background:#eee none repeat scroll 0% 0%; }
+
+div a.icon-time { color:red; line-height:5em; font-weight:600; }
+li a.icon-time {line-height:normal;}
+.icon-time { background: none; }
+.icon-folder{ background-repeat:no-repeat;}
+.icon-fav{ background:url(/redmine/images/fav.png) no-repeat left center !important; }
+.icon-admin{background:url(/redmine/images/changeset.png) no-repeat left center !important; }
+.clear{ clear:both; }
+
+
+/* HCG Specific */
+#svn { padding:0px!important;}
+.svnx a{ background:#fff url(/redmine/images/svn.png) no-repeat left center; display:block; height:27px; padding:8px 0 0 38px; margin: 3px 15px; }
+
+#evillage{ padding:0px!important;}
+.evillagex a{ background:#fff url(/redmine/images/evillage.gif) no-repeat left center; display:block; height:42px; padding:15px 0 0 95px;  margin: 0px 15px;}
+/* END HCG Specific */
