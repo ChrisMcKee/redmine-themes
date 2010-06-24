@@ -248,7 +248,7 @@ p.breadcrumb {
 #api-access-key{ color:#000; font-family:"Segoe UI", mono, courier, arial, serif; font-size:11px; background:yellow;}
 
 /* Content Split Left Clear */
-.splitcontentleft{ clear:both;}
+/*.splitcontentleft{ clear:both;}*/
 
 /* Contextual (Header Buttons) */
 .contextual { 
@@ -382,12 +382,3 @@ li a.icon-time {line-height:normal;}
 .icon-fav{ background:url(/redmine/images/fav.png) no-repeat left center !important; }
 .icon-admin{background:url(/redmine/images/changeset.png) no-repeat left center !important; }
 .clear{ clear:both; }
-
-
-/* HCG Specific */
-#svn { padding:0px!important;}
-.svnx a{ background:#fff url(/redmine/images/svn.png) no-repeat left center; display:block; height:27px; padding:8px 0 0 38px; margin: 3px 15px; }
-
-#evillage{ padding:0px!important;}
-.evillagex a{ background:#fff url(/redmine/images/evillage.gif) no-repeat left center; display:block; height:42px; padding:15px 0 0 95px;  margin: 0px 15px;}
-/* END HCG Specific */
