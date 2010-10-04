@@ -9,8 +9,8 @@
  _/_/  _/ _/ _/    
 
 
-Theme:		Chris McKee Customised Theme
-Updated:	18/05/10
+Theme:		Chris McKee Customised Theme (RED)
+Updated:	04/10/10 (for Redmine 1.0.2
 Author:		Chris McKee <chris@chrismckee.co.uk>
 
 */
@@ -113,6 +113,10 @@ textarea#issue_description { width: 93%;}
 #sidebar h4 { color: #fff; border-bottom:1px solid #989898; padding:6px 0; font-weight:600; font-size:1.0em; }
 
 #sidebar .contextual a { color:#000; padding:0px; }
+
+#sidebar #watchers . contextual{/* Add Button */}
+
+
 /* End Side Bar */
 
 /* Footer */
@@ -145,6 +149,13 @@ table.progress td.closed { background-color:#C6E60D; }
 .wiki h2 { background-color: #fff; }
 .wiki a{ color: #134776 !important; }
 /* END Wiki */
+
+/* Issue [view issue] Page */
+body.controller-issues.action-show #history  div.journal.has-notes { position:relative; }
+body.controller-issues.action-show #history  div .contextual{ right:0;top:20px;}
+body.controller-issues.action-show #history  .journal{ border-bottom:solid #E0E4CC 1px; }
+
+/* END Issue [view issue] Page */
 
 /* Settings Menu */
 #content .tabs ul li a {
@@ -262,9 +273,14 @@ p.breadcrumb {
 	font-weight:600;
 	white-space: nowrap;
 	border-radius:5px;
+	margin:0px; 
 }
 
 .contextual a{ color:#455138;}
+
+.controller-issues.action-index .contextual,
+.controller-files.action-index .contextual{ display:none; }
+
 
 /* Relations - Contextual */
 #issue_tree .contextual,
@@ -311,6 +327,9 @@ input[type=submit]:hover, .green.cbutton:hover{background-color:#749a02;}
 .orange.cbutton:hover{background-color:#d45500;}
 .yellow.cbutton,.yellow.cbutton:visited{background-color:#ffb515;}
 .yellow.cbutton:hover{background-color:#fc9200;}
+input[name=commit]{ font-weight:600; }
+
+.controller-my.action-account #sidebar a{ font-weight: 600; color:#fff; padding:2px; }
 
 /* End Buttons */
 

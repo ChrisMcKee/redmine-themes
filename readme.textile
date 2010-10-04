@@ -1,13 +1,18 @@
 hn. CM-RED Redmine Theme
 
+*Updated for Redmine 1.0.2*
+
+Either download the source and extract to ~/apps/redmine/public/themes/CM-Red/*
+or GIT Clone to simplify keeping it up to date :)
+
 _Roadmap_
-!http://github.com/downloads/ChrisMcKee/redmine-themes/Screenshot-Roadmap.gif!
+!https://github.com/downloads/ChrisMcKee/redmine-themes/Screenshot-Roadmap.gif!
 
 _Repository View_
-!http://github.com/downloads/ChrisMcKee/redmine-themes/Screenshot-Repository.gif!
+!https://github.com/downloads/ChrisMcKee/redmine-themes/Screenshot-Repository.gif!
 
 _New Issue_
-!http://github.com/downloads/ChrisMcKee/redmine-themes/Screenshot-NewIssue.gif!
+!https://github.com/downloads/ChrisMcKee/redmine-themes/Screenshot-NewIssue.gif!
 
 _Issues List_
-!http://github.com/downloads/ChrisMcKee/redmine-themes/Screenshot-Issues.gif!
+!https://github.com/downloads/ChrisMcKee/redmine-themes/Screenshot-Issues.gif!
