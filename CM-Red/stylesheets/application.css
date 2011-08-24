@@ -278,8 +278,9 @@ p.breadcrumb {
 
 .contextual a{ color:#455138;}
 
-.controller-issues.action-index .contextual,
-.controller-files.action-index .contextual{ display:none; }
+.controller-issues.action-index .contextual { display:none; }
+
+
 
 
 /* Relations - Contextual */
