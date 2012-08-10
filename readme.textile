@@ -1,4 +1,4 @@
-hn. CM-RED Redmine Theme
+h1. CM-RED Redmine Theme
 
 *Updated for Redmine 1.0.2*
 
